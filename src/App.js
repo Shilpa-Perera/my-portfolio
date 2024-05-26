@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 function App() {
 	return (
 		<Router>
-			<div className="flex">
+			<div className="flex animate-slideInUp">
 				<Sidebar />
 				<div className="flex-1 overflow-y-auto h-screen scroll-smooth">
 					<Routes>

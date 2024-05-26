@@ -7,17 +7,17 @@ import resumePDF from "../assets/my_resume.pdf";
 
 const About = () => {
 	return (
-		<div className="flex items-center p-8 bg-gradient-to-r from-gray-950 to-blue-900 h-screen animate-slideInUp">
-			<div className="w-1/3 ">
+		<div className="flex items-center p-8 bg-gradient-to-r from-gray-950 to-blue-900 h-screen ">
+			<div className="w-1/3 animate-slideInUp">
 				<img
 					src={myImage}
 					alt="Shilpa Perera"
 					className="rounded-full w-128 h-128 object-cover mx-auto"
 				/>
 			</div>
-			<div className="w-2/3 pl-8  font-mono">
+			<div className="w-2/3 pl-8  font-mono animate-slideInUp">
 				<h1 className="text-8xl text-center font-mono font-bold mb-4 text-white">
-					Hi there!
+					Hi there !
 				</h1>
 				<h1 className="text-8xl text-center font-mono font-bold mb-4 text-white">
 					I'm Shilpa Perera
