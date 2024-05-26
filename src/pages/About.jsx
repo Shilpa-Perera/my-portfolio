@@ -7,15 +7,15 @@ import resumePDF from "../assets/my_resume.pdf";
 
 const About = () => {
 	return (
-		<div className="flex items-center p-8 bg-gradient-to-r from-gray-950 to-blue-900 h-screen">
-			<div className="w-1/3 animate-fadeIn">
+		<div className="flex items-center p-8 bg-gradient-to-r from-gray-950 to-blue-900 h-screen animate-slideInUp">
+			<div className="w-1/3 ">
 				<img
 					src={myImage}
 					alt="Shilpa Perera"
 					className="rounded-full w-128 h-128 object-cover mx-auto"
 				/>
 			</div>
-			<div className="w-2/3 pl-8 animate-fadeIn">
+			<div className="w-2/3 pl-8  font-mono">
 				<h1 className="text-8xl text-center font-mono font-bold mb-4 text-white">
 					Hi there!
 				</h1>
@@ -23,7 +23,7 @@ const About = () => {
 					I'm Shilpa Perera
 				</h1>
 				<p className="text-3xl text-center text-white">
-					Software Engineer
+					Welcome to my portfolio
 				</p>
 				<div className="text-center mt-8">
 					<a

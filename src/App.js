@@ -1,33 +1,30 @@
+// src/App.jsx
+
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/SideBar";
 import About from "./pages/About";
+import Education from "./pages/Education";
+import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
 	return (
-		<div className="flex">
-			<Sidebar />
-			<div className="flex-1">
-				<section id="about" className="mb-10">
-					<About />
-				</section>
-				<section id="education" className="mb-10">
-					<h2 className="text-3xl font-bold mb-4">Education</h2>
-					<p>Your educational background.</p>
-				</section>
-				<section id="experience" className="mb-10">
-					<h2 className="text-3xl font-bold mb-4">Experience</h2>
-					<p>Your professional experience.</p>
-				</section>
-				<section id="projects" className="mb-10">
-					<h2 className="text-3xl font-bold mb-4">Projects</h2>
-					<p>Details of your projects.</p>
-				</section>
-				<section id="contact" className="mb-10">
-					<h2 className="text-3xl font-bold mb-4">Contact Me</h2>
-					<p>How to contact you.</p>
-				</section>
+		<Router>
+			<div className="flex">
+				<Sidebar />
+				<div className="flex-1 overflow-y-auto h-screen scroll-smooth">
+					<Routes>
+						<Route path="/" element={<About />} />
+						<Route path="/education" element={<Education />} />
+						<Route path="/experience" element={<Experience />} />
+						<Route path="/projects" element={<Projects />} />
+						<Route path="/contact" element={<Contact />} />
+					</Routes>
+				</div>
 			</div>
-		</div>
+		</Router>
 	);
 }
 

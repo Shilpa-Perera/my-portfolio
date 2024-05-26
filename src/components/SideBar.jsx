@@ -1,4 +1,7 @@
+// src/components/Sidebar.jsx
+
 import React from "react";
+import { Link } from "react-router-dom";
 import {
 	FaUser,
 	FaGraduationCap,
@@ -11,36 +14,36 @@ const Sidebar = () => {
 	return (
 		<div className="flex flex-col items-center h-screen p-4 bg-gray-950 text-white w-32">
 			<nav className="flex flex-col flex-1 justify-center space-y-8">
-				<a
-					href="#about"
+				<Link
+					to="/"
 					className="flex items-center space-x-2 hover:text-purple-500"
 				>
 					<FaUser size={30} />
-				</a>
-				<a
-					href="#education"
+				</Link>
+				<Link
+					to="/education"
 					className="flex items-center space-x-2 hover:text-purple-500"
 				>
 					<FaGraduationCap size={30} />
-				</a>
-				<a
-					href="#experience"
+				</Link>
+				<Link
+					to="/experience"
 					className="flex items-center space-x-2 hover:text-purple-500"
 				>
 					<FaBriefcase size={30} />
-				</a>
-				<a
-					href="#projects"
+				</Link>
+				<Link
+					to="/projects"
 					className="flex items-center space-x-2 hover:text-yellow-500"
 				>
 					<FaProjectDiagram size={30} />
-				</a>
-				<a
-					href="#contact"
+				</Link>
+				<Link
+					to="/contact"
 					className="flex items-center space-x-2 hover:text-yellow-500"
 				>
 					<FaEnvelope size={30} />
-				</a>
+				</Link>
 			</nav>
 		</div>
 	);

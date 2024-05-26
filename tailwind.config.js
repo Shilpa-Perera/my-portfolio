@@ -4,13 +4,17 @@ module.exports = {
 	theme: {
 		extend: {
 			keyframes: {
-				fadeIn: {
-					"25%": { opacity: 0 },
-					"100%": { opacity: 1 },
+				slideInUp: {
+					"0%": {
+						transform: "translateY(-700px)",
+					},
+					"100%": {
+						transform: "translateY(0)",
+					},
 				},
 			},
 			animation: {
-				fadeIn: "fadeIn 3s ease-in-out",
+				slideInUp: "slideInUp 1.5s ease-out forwards",
 			},
 		},
 		fontFamily: {

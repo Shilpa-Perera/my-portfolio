@@ -5,7 +5,7 @@ import learnImage from "../assets/learning_path.png";
 import { FaDownload } from "react-icons/fa";
 import resumePDF from "../assets/my_resume.pdf";
 
-const Projects = () => {
+const Contact = () => {
 	return (
 		<div className="flex items-center p-8 bg-gradient-to-r from-blue-900 to-gray-950 h-screen">
 			<div className="w-1/3 animate-fadeIn">
@@ -39,4 +39,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default Contact;
