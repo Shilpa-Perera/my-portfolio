@@ -27,12 +27,6 @@ const Sidebar = () => {
 					<FaGraduationCap size={30} />
 				</Link>
 				<Link
-					to="/experience"
-					className="flex items-center space-x-2 hover:text-purple-500"
-				>
-					<FaBriefcase size={30} />
-				</Link>
-				<Link
 					to="/projects"
 					className="flex items-center space-x-2 hover:text-yellow-500"
 				>
