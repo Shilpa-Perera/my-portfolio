@@ -51,25 +51,25 @@ const Contact = () => {
 					<div className="flex items-center w-full my-8 mt-12 animate-slideInUp">
 						<div className="flex-grow border-t border-white"></div>
 						<div className="flex space-x-4 mx-4 text-white">
-							<a href="https://www.linkedin.com/in/yourprofile">
+							<a href="https://www.linkedin.com/in/shilpa-perera-866522201/">
 								<FaLinkedin
 									size={40}
 									className="hover:text-blue-500"
 								/>
 							</a>
-							<a href="https://github.com/yourprofile">
+							<a href="https://github.com/Shilpa-Perera">
 								<FaGithub
 									size={40}
 									className="hover:text-blue-500"
 								/>
 							</a>
-							<a href="https://medium.com/@yourprofile">
+							<a href="https://medium.com/@laksahaniperera">
 								<FaMedium
 									size={40}
 									className="hover:text-blue-500"
 								/>
 							</a>
-							<a href="https://www.facebook.com/yourprofile">
+							<a href="https://www.facebook.com/shilpa1.perera/">
 								<FaFacebook
 									size={40}
 									className="hover:text-blue-500"

@@ -1,14 +1,8 @@
-// src/components/Sidebar.jsx
-
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-	FaUser,
-	FaGraduationCap,
-	FaBriefcase,
-	FaProjectDiagram,
-	FaEnvelope,
-} from "react-icons/fa";
+import { FaUser, FaGraduationCap, FaCode, FaEnvelope } from "react-icons/fa";
+
+import { BsStars } from "react-icons/bs";
 
 const Sidebar = () => {
 	return (
@@ -30,7 +24,13 @@ const Sidebar = () => {
 					to="/projects"
 					className="flex items-center space-x-2 hover:text-yellow-500"
 				>
-					<FaProjectDiagram size={30} />
+					<FaCode size={30} />
+				</Link>
+				<Link
+					to="/testimonial"
+					className="flex items-center space-x-2 hover:text-yellow-500"
+				>
+					<BsStars size={30} />
 				</Link>
 				<Link
 					to="/contact"

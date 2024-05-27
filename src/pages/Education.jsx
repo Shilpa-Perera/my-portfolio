@@ -42,8 +42,7 @@ const Education = () => {
 			title: "GCE Advanced Level Exam",
 			institution: "Gothami Balika Vidyalaya, Colombo 10",
 			year: "2015-2018",
-			description:
-				"Passed with A passes for combined mathematics, chemistry, and B pass for physics. 1.94 z-score",
+			description: "Passed with 2A passes and a B pass",
 			side: "left",
 			icon: <LiaSchoolSolid className="text-black text-2xl" />,
 		},
