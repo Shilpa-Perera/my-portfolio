@@ -22,14 +22,6 @@ const projects = [
 		githubUrl: "https://github.com/Shilpa-Perera/GPACalculator",
 	},
 	{
-		id: 2,
-		title: "Let'sGo : Indoor positioning using wifi fingerprinting",
-		description:
-			"Let'sGo indoor navigation app utilises Wi-Fi fingerprinting alongside GPS to track indoor positions effectively.",
-		image: project2,
-		githubUrl: "https://github.com/Shilpa-Perera/LetsGo",
-	},
-	{
 		id: 3,
 		title: "Cloud-Native Realtime Multi Blockchain Visualiser",
 		description:
@@ -40,15 +32,25 @@ const projects = [
 	{
 		id: 4,
 		title: "My Portfolio",
-		description: "Portfolio Website for a developer.",
+		description:
+			"Portfolio website which showcase projects and other details. It is a responsive web application implemented using React js and tailwind css.",
 		image: project4,
 		githubUrl: "https://github.com/Shilpa-Perera/my-portfolio",
 	},
 	{
+		id: 2,
+		title: "Let'sGo : Indoor positioning using wifi fingerprinting",
+		description:
+			"Let'sGo indoor navigation app utilises Wi-Fi fingerprinting alongside GPS to track indoor positions effectively.",
+		image: project2,
+		githubUrl: "https://github.com/Shilpa-Perera/LetsGo",
+	},
+
+	{
 		id: 5,
 		title: "Resource Booking Service - Backend Contribution",
 		description:
-			"University resource booking system using MOSIP(Modular Opensource Identity Platform) with bio-metric verification.",
+			"University resource booking system using MOSIP (Modular Opensource Identity Platform) with bio-metric verification.",
 		image: project5,
 		githubUrl: "https://github.com/cse-mosip/booking-service",
 	},
@@ -62,7 +64,7 @@ const projects = [
 	},
 	{
 		id: 7,
-		title: "Texas E-strore : E-Commerce platform",
+		title: "Texas E-store : E-Commerce platform",
 		description:
 			"A web application that enables the commercial process of buying and selling over the internet. The application has main features for customers to find specific products, cart feature for order management, inventory management and report generation",
 		image: project7,
@@ -72,7 +74,7 @@ const projects = [
 		id: 8,
 		title: "Home Quarantine Management System",
 		description:
-			"A web application for continuously monitor the progression of home-quarantined patients with COVID-19. The Application provides mechanism for patients to record their symptoms. The doctors which assigned for a particular patient will monitor the symptoms and will provide feedback or directed to a hospital depending on the severity of symptoms",
+			"A web application for continuously monitor the progression of home-quarantined patients with COVID-19. The Application provides mechanism for patients to record their symptoms. The doctors which assigned will monitor the provides feedback.",
 		image: project8,
 		githubUrl:
 			"https://github.com/chathuranga-jayanath-99/home-quarantine-management-system",
@@ -101,54 +103,60 @@ const blogs = [
 const Projects = () => {
 	return (
 		<div className="min-h-screen bg-gradient-to-r from-gray-950 to-blue-900 py-12 flex flex-col justify-center">
-			<div className="container mx-auto px-4">
-				<div className="flex flex-col items-center md:flex-row md:items-start animate-slideInUp">
-					<div className="w-full md:w-1/5 flex justify-center md:justify-end mb-8 md:mb-0">
-						<div className="text-white text-4xl md:text-7xl font-bold md:fixed md:transform md:-rotate-90 md:origin-center md:top-1/2">
-							Projects
-						</div>
-					</div>
-					<div className="w-full md:w-4/5 grid grid-cols-1 sm:grid-cols-2 gap-8">
-						{projects.map((project) => (
-							<div
-								key={project.id}
-								className="relative rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105"
-							>
-								<img
-									src={project.image}
-									alt={project.title}
-									className="w-full h-60 object-cover"
-								/>
-								<div className="p-4 bg-white">
-									<h3 className="text-xl font-bold mb-2">
+			<div className="container mx-auto px-16 mb-8 text-center">
+				<h2 className="text-white text-7xl font-bold mb-4">Projects</h2>
+			</div>
+			<div className="container mx-auto px-16 animate-slideInUp">
+				<div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+					{projects.map((project) => (
+						<div
+							key={project.id}
+							className="relative rounded-2xl overflow-hidden shadow-lg transform transition-transform hover:scale-105"
+						>
+							<img
+								src={project.image}
+								alt={project.title}
+								className="w-full h-80 object-cover"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-green-400 to-indigo-900 bg-opacity-0 hover:bg-opacity-80 items-center justify-center text-white transition-opacity opacity-0 hover:opacity-100 flex flex-col justify-center p-4 text-center">
+								<div>
+									<h3 className="text-2xl font-semibold mb-2">
 										{project.title}
 									</h3>
-									<p className="text-gray-700">
+									<p className="text-gray-300">
 										{project.description}
 									</p>
-								</div>
-								<div className="absolute inset-0 bg-gray-900 bg-opacity-0 hover:bg-opacity-80 flex items-center justify-center text-white transition-opacity opacity-0 hover:opacity-100">
 									<a
 										href={project.githubUrl}
 										target="_blank"
 										rel="noopener noreferrer"
+										className="text-gray-300 hover:text-white mt-4 inline-block"
 									>
-										<FaGithub size={48} />
+										<FaGithub
+											size={24}
+											className="mr-2 inline"
+										/>
+										View on GitHub
 									</a>
 								</div>
 							</div>
-						))}
-					</div>
+						</div>
+					))}
 				</div>
 			</div>
-			<div className="my-12"></div> {/* Added margin here */}
-			<div className="container mx-auto px-4">
+			<div className="my-12"></div>
+			<div className="container mx-auto px-16 mb-8 text-center">
+				<h2 className="text-white text-7xl font-bold mb-4">
+					Blog Articles
+				</h2>
+			</div>
+			<div className="container mx-auto px-16">
 				<div className="flex flex-col items-center md:flex-row md:items-start animate-slideInUp">
-					<div className="w-full md:w-4/5 grid grid-cols-1 sm:grid-cols-2 gap-8">
+					<div className="w-full grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{blogs.map((blog) => (
 							<div
 								key={blog.id}
-								className="relative rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105"
+								className="relative rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105 "
 							>
 								<img
 									src={blog.image}
@@ -163,7 +171,7 @@ const Projects = () => {
 										{blog.start}
 									</p>
 								</div>
-								<div className="absolute inset-0 bg-gray-900 bg-opacity-0 hover:bg-opacity-80 flex items-center justify-center text-white transition-opacity opacity-0 hover:opacity-100">
+								<div className="absolute inset-0 bg-gray-900 bg-opacity-0 hover:bg-opacity-80  flex items-center justify-center text-white transition-opacity opacity-0 hover:opacity-100">
 									<a
 										href={blog.mediumUrl}
 										target="_blank"
@@ -177,11 +185,6 @@ const Projects = () => {
 								</div>
 							</div>
 						))}
-					</div>
-					<div className="w-full md:w-1/5 flex justify-center md:justify-end mb-8 md:mb-0">
-						<div className="text-white text-4xl md:text-7xl font-bold md:fixed md:transform md:-rotate-90 md:origin-center md:top-1/2">
-							Blogs
-						</div>
 					</div>
 				</div>
 			</div>

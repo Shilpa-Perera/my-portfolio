@@ -12,12 +12,15 @@ import {
 const Contact = () => {
 	return (
 		<div className="min-h-screen bg-gradient-to-r from-gray-950 to-blue-900 py-6 flex flex-col justify-center sm:py-12">
-			<div className="py-3 sm:max-w sm:mx-auto w-full grid grid-cols-5 gap-4">
-				<div className="col-span-1">
+			<div className="text-center text-white text-7xl font-bold mb-16 animate-slideInUp">
+				Contact Me
+			</div>
+			<div className="py-3 sm:max-w sm:mx-auto w-full">
+				{/* <div className="col-span-1">
 					<div className="transform -rotate-90 origin-center text-white text-7xl font-bold">
 						Contact Me
 					</div>
-				</div>
+				</div> */}
 				<div className="col-span-3 flex flex-col items-center text-gray-700 antialiased text-lg font-semibold">
 					<div className="flex flex-col items-center space-y-4">
 						<div className="flex items-center text-gray-900 animate-slideInUp">

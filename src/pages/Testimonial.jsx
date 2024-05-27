@@ -3,13 +3,11 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Testimonial = () => {
 	return (
-		<div className="flex items-center p-8 bg-gradient-to-r from-gray-950 to-blue-900 h-screen text-white">
-			<div className="flex-none w-1/5 flex items-center justify-center animate-slideInUp">
-				<div className="transform -rotate-90 origin-center text-white text-7xl font-bold">
-					What they say
-				</div>
+		<div className="items-center p-8 bg-gradient-to-r from-gray-950 to-blue-900 h-screen text-white">
+			<div className="text-center text-white text-7xl font-bold mb-12">
+				What they say
 			</div>
-			<div className="flex-grow w-4/5 p-8 space-y-6 animate-slideInUp">
+			<div className="flex-grow p-8 space-y-6 animate-slideInUp">
 				<section class="bg-gradient-to-r from-gray-100 to-white rounded-lg">
 					<div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 rounded-lg">
 						<figure class="max-w-screen-md mx-auto">
@@ -39,11 +37,15 @@ const Testimonial = () => {
 									were evident throughout her internship.
 									Moreover, her proactive approach, attention
 									to detail, and problem-solving skills played
-									a pivotal role in the project's success.
+									a pivotal role in the project's success"
 								</p>
 							</blockquote>
 							<figcaption class="flex items-center justify-center mt-6 space-x-3">
-								<a href="https://www.linkedin.com/posts/shilpa-perera-866522201_congratulations-shilpa-perera-on-the-successful-activity-7082346313236840448-oU1I?utm_source=share&utm_medium=member_desktop">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://www.linkedin.com/posts/shilpa-perera-866522201_congratulations-shilpa-perera-on-the-successful-activity-7082346313236840448-oU1I?utm_source=share&utm_medium=member_desktop"
+								>
 									<FaLinkedin
 										size={23}
 										className="text-blue-800  hover:text-black"

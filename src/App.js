@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/SideBar";
@@ -12,9 +10,9 @@ import Testimonial from "./pages/Testimonial";
 function App() {
 	return (
 		<Router>
-			<div className="flex animate-slideInUp">
+			<div className="flex flex-col sm:flex-row animate-slideInUp">
 				<Sidebar />
-				<div className="flex-1 overflow-y-auto h-screen scroll-smooth">
+				<div className="flex-1 overflow-y-auto h-screen scroll-smooth pt-16 sm:pt-0">
 					<Routes>
 						<Route path="/" element={<About />} />
 						<Route path="/education" element={<Education />} />

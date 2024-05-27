@@ -50,11 +50,12 @@ const Education = () => {
 
 	return (
 		<div className="min-h-screen bg-gradient-to-r from-gray-950 to-blue-900 py-6 flex flex-col justify-center sm:py-12">
+			<div className="text-center text-white text-7xl font-bold mb-12">
+				My Journey
+			</div>
 			<div className="py-3 sm:max-w sm:mx-auto w-full grid grid-cols-5 gap-4">
 				<div className="col-span-1">
-					{/* <div className="transform rotate-270 origin-center text-white text-2xl font-bold">
-						My Journey
-					</div> */}
+					{/* Optional content for the left column */}
 				</div>
 				<div className="col-span-3">
 					<div className="relative text-gray-700 antialiased text-sm font-semibold">
@@ -105,11 +106,7 @@ const Education = () => {
 						))}
 					</div>
 				</div>
-				<div className="col-span-1 flex justify-center items-center">
-					<div className="transform rotate-90 origin-center text-white text-7xl font-bold">
-						My Journey
-					</div>
-				</div>
+				<div className="col-span-1 flex justify-center items-center"></div>
 			</div>
 		</div>
 	);
