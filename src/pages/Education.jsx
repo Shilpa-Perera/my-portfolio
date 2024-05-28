@@ -3,6 +3,7 @@ import { LiaSchoolSolid } from "react-icons/lia";
 import { IoSchool } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
 import { GiTeacher } from "react-icons/gi";
+import { FaPenAlt } from "react-icons/fa";
 
 const Education = () => {
 	const educationData = [
@@ -46,11 +47,20 @@ const Education = () => {
 			side: "left",
 			icon: <LiaSchoolSolid className="text-black text-2xl" />,
 		},
+		{
+			id: 4,
+			title: "GCE Ordinary Level Exam",
+			institution: "Gothami Balika Vidyalaya, Colombo 10",
+			year: "2014",
+			description: "Passed with 9A passes",
+			side: "right",
+			icon: <FaPenAlt className="text-black text-2xl" />,
+		},
 	];
 
 	return (
 		<div className="min-h-screen bg-gradient-to-r from-gray-950 to-blue-900 py-6 flex flex-col justify-center sm:py-12">
-			<div className="text-center text-white text-7xl font-bold mb-12">
+			<div className="animate-slideInUp text-center text-white text-7xl font-bold mb-12">
 				My Journey
 			</div>
 			<div className="py-3 sm:max-w sm:mx-auto w-full grid grid-cols-5 gap-4">
@@ -82,19 +92,23 @@ const Education = () => {
 													: "sm:pl-8"
 											}`}
 										>
-											<div className="p-4 bg-white rounded shadow hover:bg-gray-900 hover:text-white">
-												<h2 className="text-xl font-bold">
-													{item.title}
-												</h2>
-												<h3 className="text-lg font-semibold">
-													{item.institution}
-												</h3>
-												<p className="text-sm">
-													{item.year}
-												</p>
-												<p className="text-sm">
-													{item.description}
-												</p>
+											<div className="p-4 bg-white rounded shadow group hover:bg-gradient-to-t from-green-400 to-indigo-900 hover:text-white relative overflow-hidden">
+												<div className="initial-content transition-transform duration-300 group-hover:translate-y-full group-hover:opacity-0">
+													<h2 className="text-xl font-bold">
+														{item.title}
+													</h2>
+													<h3 className="text-lg font-semibold">
+														{item.institution}
+													</h3>
+													<p className="text-sm">
+														{item.year}
+													</p>
+												</div>
+												<div className="description-content absolute top-0 left-0 w-full h-full flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+													<p className="text-lg text-center px-4">
+														{item.description}
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>

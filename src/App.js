@@ -6,13 +6,16 @@ import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Testimonial from "./pages/Testimonial";
+import { Tooltip } from "react-tooltip";
 
 function App() {
 	return (
 		<Router>
-			<div className="flex flex-col sm:flex-row animate-slideInUp">
+			<div className="flex flex-col sm:flex-row h-screen">
 				<Sidebar />
-				<div className="flex-1 overflow-y-auto h-screen scroll-smooth pt-16 sm:pt-0">
+				<Tooltip id="my-tooltip" />
+
+				<div className="flex-1 overflow-y-auto pt-16 sm:pt-0">
 					<Routes>
 						<Route path="/" element={<About />} />
 						<Route path="/education" element={<Education />} />

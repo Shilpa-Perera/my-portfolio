@@ -12,8 +12,8 @@ const Sidebar = () => {
 	};
 
 	return (
-		<div className="bg-gray-950 text-white w-full h-screen sm:w-32 flex flex-row sm:flex-col justify-center items-center p-4 fixed sm:relative top-0 sm:top-auto left-0">
-			<nav className="flex sm:flex-col flex-row justify-around sm:justify-center w-full sm:space-y-8 sm:w-auto space-x-8 sm:space-x-0 items-center">
+		<div className="bg-gray-950 text-white w-full h-16 sm:h-full sm:w-32 flex flex-row sm:flex-col justify-between sm:justify-center items-center p-4 fixed sm:relative top-0 left-0">
+			<nav className="flex flex-row sm:flex-col justify-around sm:justify-center w-full sm:space-y-8 space-x-8 sm:space-x-0 items-center">
 				<Link
 					to="/"
 					className={`flex items-center space-x-2 ${
@@ -27,6 +27,9 @@ const Sidebar = () => {
 						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
 							activeLink === "/" && "bg-purple-500"
 						}`}
+						data-tooltip-id="my-tooltip"
+						data-tooltip-content="Welcome"
+						data-tooltip-place="top"
 					>
 						<FaUser size={30} />
 					</div>
@@ -44,6 +47,9 @@ const Sidebar = () => {
 						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
 							activeLink === "/education" && "bg-purple-500"
 						}`}
+						data-tooltip-id="my-tooltip"
+						data-tooltip-content="My Journey"
+						data-tooltip-place="top"
 					>
 						<FaGraduationCap size={30} />
 					</div>
@@ -61,6 +67,9 @@ const Sidebar = () => {
 						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
 							activeLink === "/projects" && "bg-purple-500"
 						}`}
+						data-tooltip-id="my-tooltip"
+						data-tooltip-content="Projects"
+						data-tooltip-place="top"
 					>
 						<FaCode size={30} />
 					</div>
@@ -78,6 +87,9 @@ const Sidebar = () => {
 						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
 							activeLink === "/testimonial" && "bg-purple-500"
 						}`}
+						data-tooltip-id="my-tooltip"
+						data-tooltip-content="Testimonial"
+						data-tooltip-place="top"
 					>
 						<BsStars size={30} />
 					</div>
@@ -95,6 +107,9 @@ const Sidebar = () => {
 						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
 							activeLink === "/contact" && "bg-purple-500"
 						}`}
+						data-tooltip-id="my-tooltip"
+						data-tooltip-content="Contact Me"
+						data-tooltip-place="top"
 					>
 						<FaEnvelope size={30} />
 					</div>

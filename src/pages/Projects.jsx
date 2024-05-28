@@ -103,7 +103,7 @@ const blogs = [
 const Projects = () => {
 	return (
 		<div className="min-h-screen bg-gradient-to-r from-gray-950 to-blue-900 py-12 flex flex-col justify-center">
-			<div className="container mx-auto px-16 mb-8 text-center">
+			<div className="container mx-auto px-16 mb-8 text-center animate-slideInUp">
 				<h2 className="text-white text-7xl font-bold mb-4">Projects</h2>
 			</div>
 			<div className="container mx-auto px-16 animate-slideInUp">
@@ -111,14 +111,14 @@ const Projects = () => {
 					{projects.map((project) => (
 						<div
 							key={project.id}
-							className="relative rounded-2xl overflow-hidden shadow-lg transform transition-transform hover:scale-105"
+							className="relative rounded-2xl overflow-hidden shadow-lg transform transition-transform hover:scale-105 group"
 						>
 							<img
 								src={project.image}
 								alt={project.title}
 								className="w-full h-80 object-cover"
 							/>
-							<div className="absolute inset-0 bg-gradient-to-t from-green-400 to-indigo-900 bg-opacity-0 hover:bg-opacity-80 items-center justify-center text-white transition-opacity opacity-0 hover:opacity-100 flex flex-col justify-center p-4 text-center">
+							<div className="absolute inset-0 bg-gradient-to-t from-green-400 to-indigo-900 bg-opacity-0 group-hover:bg-opacity-80 items-center justify-center text-white transition-opacity opacity-0 group-hover:opacity-100 flex flex-col justify-end p-4 text-center animate-none group-hover:animate-slide-in-up">
 								<div>
 									<h3 className="text-2xl font-semibold mb-2">
 										{project.title}
@@ -156,7 +156,7 @@ const Projects = () => {
 						{blogs.map((blog) => (
 							<div
 								key={blog.id}
-								className="relative rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105 "
+								className="relative rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105 group"
 							>
 								<img
 									src={blog.image}
@@ -171,7 +171,7 @@ const Projects = () => {
 										{blog.start}
 									</p>
 								</div>
-								<div className="absolute inset-0 bg-gray-900 bg-opacity-0 hover:bg-opacity-80  flex items-center justify-center text-white transition-opacity opacity-0 hover:opacity-100">
+								<div className="absolute inset-0 bg-gray-900 bg-opacity-0 group-hover:bg-opacity-80  flex items-center justify-center text-white transition-opacity opacity-0 group-hover:opacity-100 animate-none group-hover:animate-slide-in-up">
 									<a
 										href={blog.mediumUrl}
 										target="_blank"
