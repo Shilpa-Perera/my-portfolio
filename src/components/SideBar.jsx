@@ -4,14 +4,14 @@ import { FaUser, FaGraduationCap, FaCode, FaEnvelope } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 
 const Sidebar = () => {
-	const [activeLink, setActiveLink] = useState("");
+	const [activeLink, setActiveLink] = useState("/");
 
 	const handleLinkClick = (link) => {
 		setActiveLink(link);
 	};
 
 	return (
-		<div className="bg-gray-950 text-white w-full sm:w-32 h-20 sm:h-full flex flex-row sm:flex-col justify-center items-center p-1 fixed sm:fixed top-0 left-0 sm:top-0 sm:left-0 z-10">
+		<div className="bg-gray-950 text-white w-full sm:w-32 h-20 sm:h-full flex flex-row sm:flex-col justify-center items-center p-1 fixed sm:fixed top-0 left-0 sm:top-0 sm:left-0">
 			<nav className="flex flex-row sm:flex-col justify-center w-full sm:space-y-8 space-x-4 sm:space-x-0 items-center">
 				<Link
 					to="/"

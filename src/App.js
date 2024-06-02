@@ -13,7 +13,6 @@ function App() {
 		<Router>
 			<div className="flex flex-col sm:flex-row h-screen">
 				<Sidebar />
-				<Tooltip id="my-tooltip" />
 				<div className="flex-1 overflow-y-auto pt-20 sm:pt-0 sm:ml-32">
 					<Routes>
 						<Route path="/" element={<About />} />
@@ -23,6 +22,7 @@ function App() {
 						<Route path="/contact" element={<Contact />} />
 					</Routes>
 				</div>
+				<Tooltip id="my-tooltip" />
 			</div>
 		</Router>
 	);
