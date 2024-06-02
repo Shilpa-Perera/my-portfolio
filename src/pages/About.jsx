@@ -14,13 +14,13 @@ const About = () => {
 				/>
 			</div>
 			<div className="w-full md:w-2/3 md:pl-8 font-mono animate-slideInUp">
-				<h1 className="lg:text-8xl md:text-6xl sm:5xl  text-center font-mono font-bold mb-4 text-white">
-					Hi there!
+				<h1 className="text-5xl lg:text-8xl md:text-6xl  text-center font-mono font-bold mb-4 text-white">
+					Hi there !
 				</h1>
-				<h1 className="lg:text-8xl md:text-6xl sm:5xl  text-center font-mono font-bold mb-4 text-white">
+				<h1 className="text-5xl lg:text-8xl md:text-6xl text-center font-mono font-bold mb-4 text-white">
 					I'm Shilpa Perera
 				</h1>
-				<p className="md:text-2xl lg:text-3xl sm:xl text-center text-white">
+				<p className="text-xl md:text-2xl lg:text-3xl text-center text-white">
 					Welcome to my portfolio
 				</p>
 				<div className="text-center mt-8">

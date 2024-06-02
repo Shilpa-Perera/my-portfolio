@@ -3,17 +3,17 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Testimonial = () => {
 	return (
-		<div className="h-screen bg-gradient-to-r from-gray-950 to-blue-900 flex items-center justify-center">
-			<div className="animate-slideInUp text-center">
-				<div className="text-white text-7xl font-bold mb-12">
+		<div className="min-h-screen bg-gradient-to-r from-gray-950 to-blue-900 flex items-center justify-center p-4">
+			<div className="animate-slideInUp text-center w-full">
+				<div className="text-white text-5xl sm:text-7xl font-bold mb-12 font-serif">
 					What They Say ...
 				</div>
-				<div className="p-8 animate-slideInUp">
-					<section className="bg-gradient-to-r from-gray-100 to-white rounded-lg p-8 shadow-lg">
+				<div className="p-4 sm:p-8 animate-slideInUp">
+					<section className="bg-gradient-to-r from-gray-100 to-white rounded-lg p-4 sm:p-8 shadow-lg">
 						<div className="max-w-screen-md mx-auto text-center">
 							<figure>
 								<svg
-									className="h-12 mx-auto mb-3 text-gray-400"
+									className="h-8 sm:h-12 mx-auto mb-3 text-gray-400"
 									viewBox="0 0 24 27"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const Testimonial = () => {
 									/>
 								</svg>
 								<blockquote>
-									<p className="text-xl font-medium text-gray-700">
+									<p className="text-lg sm:text-xl font-medium text-gray-700 font-serif">
 										"Shilpa made significant contributions
 										as a member of our Blockchain Network
 										Creator project, focusing on the
@@ -32,7 +32,7 @@ const Testimonial = () => {
 										her expertise in React, Java, Spring
 										Boot, Hyperledger Fabric, and Docker.
 									</p>
-									<p className="text-xl font-medium text-gray-700">
+									<p className="text-lg sm:text-xl font-medium text-gray-700 font-serif">
 										Shilpa's remarkable qualities as a quick
 										learner, team player, and eagerness to
 										learn were evident throughout her

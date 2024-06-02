@@ -14,8 +14,7 @@ function App() {
 			<div className="flex flex-col sm:flex-row h-screen">
 				<Sidebar />
 				<Tooltip id="my-tooltip" />
-
-				<div className="flex-1 overflow-y-auto pt-16 sm:pt-0">
+				<div className="flex-1 overflow-y-auto pt-20 sm:pt-0 sm:ml-32">
 					<Routes>
 						<Route path="/" element={<About />} />
 						<Route path="/education" element={<Education />} />

@@ -4,19 +4,18 @@ import { FaUser, FaGraduationCap, FaCode, FaEnvelope } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 
 const Sidebar = () => {
-	const [activeLink, setActiveLink] = useState(""); // State to track active link
+	const [activeLink, setActiveLink] = useState("");
 
-	// Function to handle click on a link
 	const handleLinkClick = (link) => {
 		setActiveLink(link);
 	};
 
 	return (
-		<div className="bg-gray-950 text-white w-full h-16 sm:h-full sm:w-32 flex flex-row sm:flex-col justify-between sm:justify-center items-center p-4 fixed sm:relative top-0 left-0">
-			<nav className="flex flex-row sm:flex-col justify-around sm:justify-center w-full sm:space-y-8 space-x-8 sm:space-x-0 items-center">
+		<div className="bg-gray-950 text-white w-full sm:w-32 h-20 sm:h-full flex flex-row sm:flex-col justify-center items-center p-1 fixed sm:fixed top-0 left-0 sm:top-0 sm:left-0 z-10">
+			<nav className="flex flex-row sm:flex-col justify-center w-full sm:space-y-8 space-x-4 sm:space-x-0 items-center">
 				<Link
 					to="/"
-					className={`flex items-center space-x-2 ${
+					className={`flex items-center sm:justify-center ${
 						activeLink === "/"
 							? "text-purple-500"
 							: "hover:text-purple-500"
@@ -24,19 +23,19 @@ const Sidebar = () => {
 					onClick={() => handleLinkClick("/")}
 				>
 					<div
-						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
+						className={`rounded-full bg-transparent border-2 border-purple-500 p-2 sm:p-4 ${
 							activeLink === "/" && "bg-purple-500"
 						}`}
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="Welcome"
 						data-tooltip-place="top"
 					>
-						<FaUser size={30} />
+						<FaUser className="text-xl sm:text-3xl" />
 					</div>
 				</Link>
 				<Link
 					to="/education"
-					className={`flex items-center space-x-2 ${
+					className={`flex items-center sm:justify-center ${
 						activeLink === "/education"
 							? "text-purple-500"
 							: "hover:text-purple-500"
@@ -44,19 +43,19 @@ const Sidebar = () => {
 					onClick={() => handleLinkClick("/education")}
 				>
 					<div
-						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
+						className={`rounded-full bg-transparent border-2 border-purple-500 p-2 sm:p-4 ${
 							activeLink === "/education" && "bg-purple-500"
 						}`}
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="My Journey"
 						data-tooltip-place="top"
 					>
-						<FaGraduationCap size={30} />
+						<FaGraduationCap className="text-xl sm:text-3xl" />
 					</div>
 				</Link>
 				<Link
 					to="/projects"
-					className={`flex items-center space-x-2 ${
+					className={`flex items-center sm:justify-center ${
 						activeLink === "/projects"
 							? "text-purple-500"
 							: "hover:text-purple-500"
@@ -64,19 +63,19 @@ const Sidebar = () => {
 					onClick={() => handleLinkClick("/projects")}
 				>
 					<div
-						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
+						className={`rounded-full bg-transparent border-2 border-purple-500 p-2 sm:p-4 ${
 							activeLink === "/projects" && "bg-purple-500"
 						}`}
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="Projects"
 						data-tooltip-place="top"
 					>
-						<FaCode size={30} />
+						<FaCode className="text-xl sm:text-3xl" />
 					</div>
 				</Link>
 				<Link
 					to="/testimonial"
-					className={`flex items-center space-x-2 ${
+					className={`flex items-center sm:justify-center ${
 						activeLink === "/testimonial"
 							? "text-purple-500"
 							: "hover:text-purple-500"
@@ -84,19 +83,19 @@ const Sidebar = () => {
 					onClick={() => handleLinkClick("/testimonial")}
 				>
 					<div
-						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
+						className={`rounded-full bg-transparent border-2 border-purple-500 p-2 sm:p-4 ${
 							activeLink === "/testimonial" && "bg-purple-500"
 						}`}
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="Testimonial"
 						data-tooltip-place="top"
 					>
-						<BsStars size={30} />
+						<BsStars className="text-xl sm:text-3xl" />
 					</div>
 				</Link>
 				<Link
 					to="/contact"
-					className={`flex items-center space-x-2 ${
+					className={`flex items-center sm:justify-center ${
 						activeLink === "/contact"
 							? "text-purple-500"
 							: "hover:text-purple-500"
@@ -104,14 +103,14 @@ const Sidebar = () => {
 					onClick={() => handleLinkClick("/contact")}
 				>
 					<div
-						className={`rounded-full bg-transparent border-2 border-purple-500 p-4 ${
+						className={`rounded-full bg-transparent border-2 border-purple-500 p-2 sm:p-4 ${
 							activeLink === "/contact" && "bg-purple-500"
 						}`}
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="Contact Me"
 						data-tooltip-place="top"
 					>
-						<FaEnvelope size={30} />
+						<FaEnvelope className="text-xl sm:text-3xl" />
 					</div>
 				</Link>
 			</nav>

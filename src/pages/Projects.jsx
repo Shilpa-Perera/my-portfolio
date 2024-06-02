@@ -8,6 +8,7 @@ import project5 from "../assets/project_5.png";
 import project6 from "../assets/project_6.png";
 import project7 from "../assets/project_7.png";
 import project8 from "../assets/project_8.png";
+import project9 from "../assets/project_9.png";
 
 import blog1 from "../assets/blog_1.png";
 import blog2 from "../assets/blog_2.png";
@@ -79,6 +80,14 @@ const projects = [
 		githubUrl:
 			"https://github.com/chathuranga-jayanath-99/home-quarantine-management-system",
 	},
+	{
+		id: 9,
+		title: "Kafka-Wikimedia",
+		description:
+			"Simple producer-consumer application using Apache Kafka, Spring Boot and MongoDB",
+		image: project9,
+		githubUrl: "https://github.com/Shilpa-Perera/kafka-wikimedia",
+	},
 ];
 
 const blogs = [
@@ -104,7 +113,9 @@ const Projects = () => {
 	return (
 		<div className="min-h-screen bg-gradient-to-r from-gray-950 to-blue-900 py-12 flex flex-col justify-center">
 			<div className="container mx-auto px-16 mb-8 text-center animate-slideInUp">
-				<h2 className="text-white text-7xl font-bold mb-4">Projects</h2>
+				<h2 className="text-white text-5xl sm:text-7xl font-bold mb-4 font-serif">
+					Projects
+				</h2>
 			</div>
 			<div className="container mx-auto px-16 animate-slideInUp">
 				<div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -146,7 +157,7 @@ const Projects = () => {
 			</div>
 			<div className="my-12"></div>
 			<div className="container mx-auto px-16 mb-8 text-center">
-				<h2 className="text-white text-7xl font-bold mb-4">
+				<h2 className="text-white text-5xl sm:text-7xl font-bold mb-4 font-serif">
 					Blog Articles
 				</h2>
 			</div>
