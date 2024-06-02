@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUser, FaGraduationCap, FaCode, FaEnvelope } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
+import { Tooltip } from "react-tooltip";
 
 const Sidebar = () => {
 	const [activeLink, setActiveLink] = useState("/");
+
+	const [isOpen, setIsOpen] = useState(false);
 
 	const handleLinkClick = (link) => {
 		setActiveLink(link);
@@ -29,6 +32,8 @@ const Sidebar = () => {
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="Welcome"
 						data-tooltip-place="top"
+						onMouseEnter={() => setIsOpen(true)}
+						onClick={() => setIsOpen(false)}
 					>
 						<FaUser className="text-xl sm:text-3xl" />
 					</div>
@@ -49,6 +54,8 @@ const Sidebar = () => {
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="My Journey"
 						data-tooltip-place="top"
+						onMouseEnter={() => setIsOpen(true)}
+						onClick={() => setIsOpen(false)}
 					>
 						<FaGraduationCap className="text-xl sm:text-3xl" />
 					</div>
@@ -69,6 +76,8 @@ const Sidebar = () => {
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="Projects"
 						data-tooltip-place="top"
+						onMouseEnter={() => setIsOpen(true)}
+						onClick={() => setIsOpen(false)}
 					>
 						<FaCode className="text-xl sm:text-3xl" />
 					</div>
@@ -89,6 +98,8 @@ const Sidebar = () => {
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="Testimonial"
 						data-tooltip-place="top"
+						onMouseEnter={() => setIsOpen(true)}
+						onClick={() => setIsOpen(false)}
 					>
 						<BsStars className="text-xl sm:text-3xl" />
 					</div>
@@ -109,11 +120,14 @@ const Sidebar = () => {
 						data-tooltip-id="my-tooltip"
 						data-tooltip-content="Contact Me"
 						data-tooltip-place="top"
+						onMouseEnter={() => setIsOpen(true)}
+						onClick={() => setIsOpen(false)}
 					>
 						<FaEnvelope className="text-xl sm:text-3xl" />
 					</div>
 				</Link>
 			</nav>
+			<Tooltip id="my-tooltip" isOpen={isOpen} />
 		</div>
 	);
 };

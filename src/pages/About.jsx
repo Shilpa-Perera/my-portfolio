@@ -13,11 +13,11 @@ const About = () => {
 					className="rounded-full lg:w-128 lg:h-128 object-cover mx-auto"
 				/>
 			</div>
-			<div className="w-full md:w-2/3 md:pl-8 font-mono animate-slideInUp">
-				<h1 className="text-5xl lg:text-8xl md:text-6xl  text-center font-mono font-bold mb-4 text-white">
+			<div className="w-full md:w-2/3 md:pl-8 font-serif animate-slideInUp">
+				<h1 className="text-5xl lg:text-8xl md:text-6xl  text-center font-serif font-bold mb-4 text-white">
 					Hi there !
 				</h1>
-				<h1 className="text-5xl lg:text-8xl md:text-6xl text-center font-mono font-bold mb-4 text-white">
+				<h1 className="text-5xl lg:text-8xl md:text-6xl text-center font-serif font-bold mb-4 text-white">
 					I'm Shilpa Perera
 				</h1>
 				<p className="text-xl md:text-2xl lg:text-3xl text-center text-white">

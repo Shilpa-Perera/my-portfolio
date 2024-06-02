@@ -66,7 +66,7 @@ const Education = () => {
 			<div className="py-3 sm:max-w sm:mx-auto w-full grid grid-cols-5 gap-4">
 				<div className="col-span-1"></div>
 				<div className="col-span-3">
-					<div className="relative text-gray-700 antialiased text-sm font-semibold">
+					<div className="relative text-gray-700 antialiased text-sm ">
 						<div className="hidden sm:block w-1 bg-blue-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
 						{educationData.map((item) => (
 							<div
@@ -92,18 +92,18 @@ const Education = () => {
 										>
 											<div className="mt-5 sm:mt-0 p-4 bg-white rounded shadow group hover:bg-gradient-to-t from-green-400 to-indigo-900 hover:text-white relative overflow-hidden">
 												<div className="initial-content transition-transform duration-300 group-hover:translate-y-full group-hover:opacity-0">
-													<h2 className="text-xl font-bold ">
+													<h2 className="text-xl font-bold font-serif">
 														{item.title}
 													</h2>
-													<h3 className="text-lg font-semibold ">
+													<h3 className="text-lg  font-serif">
 														{item.institution}
 													</h3>
-													<p className="text-sm ">
+													<p className="text-sm font-serif">
 														{item.year}
 													</p>
 												</div>
 												<div className="description-content absolute top-0 left-0 w-full h-full flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-													<p className="text-lg text-center px-4 ">
+													<p className="text-lg text-center px-4 font-serif">
 														{item.description}
 													</p>
 												</div>

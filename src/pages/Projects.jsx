@@ -172,7 +172,7 @@ const Projects = () => {
 								<img
 									src={blog.image}
 									alt={blog.title}
-									className="w-full h-70 object-cover"
+									className="w-full h-80 sm:h-70 object-cover"
 								/>
 								<div className="p-4 bg-white">
 									<h3 className="text-xl font-bold mb-2">

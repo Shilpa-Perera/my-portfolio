@@ -6,7 +6,6 @@ import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Testimonial from "./pages/Testimonial";
-import { Tooltip } from "react-tooltip";
 
 function App() {
 	return (
@@ -22,7 +21,6 @@ function App() {
 						<Route path="/contact" element={<Contact />} />
 					</Routes>
 				</div>
-				<Tooltip id="my-tooltip" />
 			</div>
 		</Router>
 	);
